@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name: barrett
+    Date Completed: 4/29/26
+-->
+
+<head>
+    <title>Bootstrap Examples</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">WebDev</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Links</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="p-5 bg-primary text-white text-center">
+        <h1 class="animate__animated animate__fadeInDown">Bootstrap Examples</h1>
+        <p class="lead">Examples of layouts and components using Bootstrap</p>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- GRID EXAMPLES -->
+        <div class="container mt-4">
+
+            <h3>Grid Layouts</h3>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="demo-content">.col-md-6</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="demo-content bg-alt">.col-md-6</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="demo-content">.col-md-4</div>
+                </div>
+                <div class="col-md-8">
+                    <div class="demo-content bg-alt">.col-md-8</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="demo-content">.col-md-3</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="demo-content bg-alt">.col-md-9</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col demo-content">One</div>
+                <div class="col demo-content bg-alt">Two</div>
+                <div class="col demo-content">Three</div>
+                <div class="col demo-content bg-alt">Four</div>
+            </div>
+
+        </div>
+
+        <!-- TABLE -->
+        <div class="container mt-4">
+            <h3>Striped Table</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Barrett</td>
+                        <td>Web Dev</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Alex</td>
+                        <td>Science</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Jordan</td>
+                        <td>Math</td>
+                        <td>A-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- LIST GROUP -->
+        <div class="container mt-4">
+            <h3>List Group</h3>
+            <ul class="list-group">
+                <li class="list-group-item active">Home</li>
+                <li class="list-group-item">Profile</li>
+                <li class="list-group-item">Messages</li>
+                <li class="list-group-item">Settings</li>
+            </ul>
+        </div>
+
+        <!-- FORM -->
+        <div class="container mt-4">
+            <h3>Form Example</h3>
+
+            <input type="text" class="form-control mb-2" placeholder="Name">
+            <input type="email" class="form-control mb-2" placeholder="Email">
+
+            <button class="btn btn-success">Submit</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+        <div class="container py-4">
+            <p>Footer Example</p>
+            <div class="d-flex justify-content-center gap-3">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-x-twitter fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
