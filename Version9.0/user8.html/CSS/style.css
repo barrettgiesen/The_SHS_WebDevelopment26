@@ -1,0 +1,111 @@
+/* BASE THEME */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: black;
+    color: gold;
+}
+
+/* NAVBAR */
+nav {
+    background: purple;
+    padding: 20px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: gold;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* DASHBOARD */
+.dashboard {
+    padding: 20px;
+}
+
+.dashboard-header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+/* STAT CARDS */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: black;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    margin: 0;
+    color: gold;
+}
+
+.stat-card p {
+    margin-top: 5px;
+    color: purple;
+    font-weight: bold;
+}
+.stat-card {
+    box-shadow: 0 0 10px purple;
+}
+/* SECTION BOXES */
+.highlight-box {
+    margin-top: 30px;
+    background: black;
+    border-left: 6px solid purple;
+    padding: 20px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: purple;
+    color: gold;
+}
+
+/* FOOTER NAV */
+.footer-nav {
+    background: purple;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-nav a {
+    color: gold;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    color: white;
+}

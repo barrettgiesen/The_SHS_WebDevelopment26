@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LeBron Stats</title>
+
+    <!-- FIXED CSS PATH -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- FIXED JS PATH -->
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- TOP NAV -->
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="stats.html">Stats</a>
+    <a href="awards.html">Awards</a>
+    <a href="fun.html">Fun</a>
+</nav>
+
+<div class="container">
+
+    <h1>LeBron Stats Page</h1>
+
+    <!-- API BUTTON -->
+    <button onclick="getLeBronStats()">Load API Data</button>
+    <p id="apiData"></p>
+
+    <hr>
+
+    <!-- SIMPLE STATS BOX -->
+    <div id="statsBox">
+        <h2>Career Averages</h2>
+        <p>Points: 27</p>
+        <p>Assists: 7</p>
+        <p>Rebounds: 7</p>
+    </div>
+
+    <button onclick="toggleStats()">Toggle Stats</button>
+
+    <hr>
+
+    <!-- CUSTOM FUNCTION DEMO -->
+    <button onclick="alert(lebronGOATScore(30,8,8))">
+        Calculate GOAT Score
+    </button>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<footer class="footer-nav">
+    <a href="../index.html">Home</a>
+    <a href="stats.html">Stats</a>
+    <a href="awards.html">Awards</a>
+    <a href="fun.html">Fun</a>
+</footer>
+
+</body>
+</html>
